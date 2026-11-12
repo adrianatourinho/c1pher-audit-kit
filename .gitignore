@@ -10,3 +10,4 @@ cache/
 # Secrets
 .env
 .env.*
+*.save
