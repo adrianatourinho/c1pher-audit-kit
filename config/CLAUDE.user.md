@@ -4,6 +4,8 @@
   phase unless the auditor asks for it.
 - After a subagent review (e.g. devils-advocate), show its verdict and its
   suggested follow-ups, then STOP and wait for the auditor's decision.
+- Append every subagent review verbatim to notes/reviews.md, with the date,
+  the reviewer's name and the finding ID, before stopping.
 - Never edit tests, notes or findings based on a review without the auditor's
   explicit approval in the chat.
 - Records in notes/ are append-only: never rewrite or delete earlier entries.
