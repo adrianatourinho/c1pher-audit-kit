@@ -21,6 +21,9 @@ The report never claims more than the evidence proves.
 - Every claim must trace to the PoC results, the test code or the source
   (file:line). If a claim was refuted in a later revision, do not use it.
 - Use "What the PoC does NOT prove" from the results to limit the Impact section.
+- If a relevant claim is not proven, do not delete it: rewrite it as
+  "Not tested: ..." and say why it matters. Unproven points that could change
+  the severity must also appear in "Severity notes for the auditor".
 - Mitigation is a suggestion in a diff block inside the report. Mark it
   "untested" unless a test proves it.
 - Plain, factual tone. No "critical", "catastrophic" or similar words unless
