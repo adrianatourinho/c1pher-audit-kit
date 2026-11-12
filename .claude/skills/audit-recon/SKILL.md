@@ -14,8 +14,12 @@ go wrong later. Map them all.
 ## Rules
 - Read-only. Never edit files in src/. Write only to notes/.
 - Every claim cites file:line.
-- Do not report vulnerabilities in this phase. If something looks suspicious,
-  add one line to "Flags for threat model" and move on.
+- Do not report vulnerabilities in this phase. Flags are neutral observations
+  of surprising code, one line each, phrased as a question, with file:line.
+  No attack chains, no impact, no exploit reasoning.
+  Good: "Vault.sol:85 compares a share amount to an asset amount. Is the rate always 1:1?"
+  Bad: "An attacker can transfer tokens to break the check and DoS the vault."
+- Report any side effects of tools you run (files deleted, rebuilt or created).
 - If something cannot be determined from the code, write UNKNOWN and state
   what is missing (deployment config, off-chain component, docs).
 
