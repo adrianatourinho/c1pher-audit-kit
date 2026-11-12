@@ -7,5 +7,14 @@
     "name": "C1pher"
   },
   "license": "MIT",
-  "keywords": ["solidity", "smart-contracts", "security", "audit", "foundry", "web3"]
+  "keywords": [
+    "solidity",
+    "smart-contracts",
+    "security",
+    "audit",
+    "foundry",
+    "web3"
+  ],
+  "repository": "https://github.com/adrianatourinho/c1pher-audit-kit",
+  "homepage": "https://github.com/adrianatourinho/c1pher-audit-kit"
 }

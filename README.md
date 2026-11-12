@@ -42,7 +42,7 @@ audit-recon  ->  threat-model  ->  foundry-poc  ->  devils-advocate  ->  finding
 Inside Claude Code:
 
 ```
-/plugin marketplace add GITHUB_USER/c1pher-audit-kit
+/plugin marketplace add adrianatourinho/c1pher-audit-kit
 /plugin install c1pher-audit-kit@c1pher
 ```
 
