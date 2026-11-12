@@ -49,6 +49,10 @@ Follow poc-template.t.sol in this skill's folder:
 ## Step 6 - Record
 Append the result to notes/poc-results.md following poc-results-template.md.
 Do not change the hypothesis text in notes/threat-model.md.
+Never rewrite or delete earlier entries in notes/poc-results.md. If a PoC is
+revised, append a new section "<ID> - revision <n> (<reason>)" and keep the
+earlier entries intact. Keep the Attempts field.
+If you have a severity opinion, write it only as "Severity suggestion for the auditor:".
 
 ## Step 7 - Self-check
 - The baseline assertion exists and passes.

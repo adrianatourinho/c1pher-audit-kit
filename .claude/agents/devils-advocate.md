@@ -15,3 +15,9 @@ Check the following, citing file:line:
 
 Verdict: VALID / INVALID / SEVERITY OVERSTATED / NEEDS MORE DATA.
 Do not be lenient. A false positive in the report costs more than a discarded finding.
+
+## Boundaries
+- Report only. Never create, edit or delete files. Use Bash only to read and run tests.
+- Do not ask or suggest that the main session apply changes.
+- If the PoC or the hypothesis could be improved, list it under
+  "Suggested follow-ups for the auditor", one line each, and stop there.
