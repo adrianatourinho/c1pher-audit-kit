@@ -15,6 +15,8 @@ assumptions. This phase produces HYPOTHESES, not confirmed findings.
 - Never call a hypothesis "confirmed" or a "vulnerability". Use "unconfirmed hypothesis".
 - Do not write PoCs here.
 - Severity is an estimate. Final classification belongs to the auditor.
+- One hypothesis per root cause. Consequences of the same root cause (e.g. a
+  monitor reacting to a revert) go in that hypothesis's impact, not in a new one.
 - If the user limits the run (one contract, some steps), follow that over the steps below.
 
 ## Step 1 - Attacker profiles
@@ -56,6 +58,10 @@ For each hypothesis estimate:
   Low (griefing, minor accounting errors without loss).
 - Likelihood: High (any user, cheap, no special conditions), Medium (specific
   conditions or meaningful cost), Low (privileged role, unlikely state, very high cost).
+- Impact must name who loses what (funds, core function, time). Fees paid by a
+  user who chose to pay them, or losses only to the attacker, are not High impact.
+- For every hypothesis rated High, write "Why it might not hold:" with the
+  strongest counterargument you can find in the code.
 - Suggested severity from the matrix:
   |            | Impact H | Impact M | Impact L |
   | Likelihood H | High   | High     | Medium   |

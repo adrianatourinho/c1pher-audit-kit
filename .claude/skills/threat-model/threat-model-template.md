@@ -20,6 +20,7 @@ Result = hypothesis ID or "holds (reason, file:line)"
 - Likelihood: H/M/L - justification
 - Suggested severity:
 - Confidence: H/M/L
+- Why it might not hold: (required for High)
 - How to prove: what a Foundry PoC must demonstrate (balances, state, revert)
 
 ## 4. Closed flags
