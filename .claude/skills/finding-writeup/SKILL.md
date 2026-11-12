@@ -15,6 +15,9 @@ The report never claims more than the evidence proves.
 - Severity comes from the auditor in the command (e.g. severity=Medium).
   If it is missing, STOP and ask, showing the impact and likelihood facts
   from the notes. Never choose it yourself.
+- If the auditor passes severity=TBD, write a DRAFT: use "TBD" in the title
+  and table, and add a section "Severity notes for the auditor" listing the
+  facts that support each plausible level. Do not recommend one.
 - Every claim must trace to the PoC results, the test code or the source
   (file:line). If a claim was refuted in a later revision, do not use it.
 - Use "What the PoC does NOT prove" from the results to limit the Impact section.
@@ -45,7 +48,7 @@ The PoC section must contain the exact command and the expected result, so
 anyone can rerun it at the same commit.
 
 ## Step 5 - Self-check
-- Latest verdict is CONFIRMED and the severity matches the auditor's command.
+- Latest verdict is CONFIRMED and the severity matches the auditor's command (or is TBD).
 - No sentence claims something the PoC results say it does not prove.
 - Every code reference has file:line and the commit.
 - The PoC command is copied exactly from notes/poc-results.md.
