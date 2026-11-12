@@ -12,6 +12,9 @@ assumptions. This phase produces HYPOTHESES, not confirmed findings.
 - Read-only. Never edit src/. Write only to notes/.
 - Input is notes/recon.md. If it does not exist, STOP and ask the user to run /audit-recon.
 - Every hypothesis cites file:line and states how it could be proven with a Foundry PoC.
+- Cite the line of the relevant statement (the require, assignment, return
+  or external call), not the function signature. Cite the signature only when
+  the issue is the declaration itself (visibility, modifiers, missing check).
 - Never call a hypothesis "confirmed" or a "vulnerability". Use "unconfirmed hypothesis".
 - Do not write PoCs here.
 - Severity is an estimate. Final classification belongs to the auditor.

@@ -20,6 +20,9 @@ The report never claims more than the evidence proves.
   facts that support each plausible level. Do not recommend one.
 - Every claim must trace to the PoC results, the test code or the source
   (file:line). If a claim was refuted in a later revision, do not use it.
+- Cite the line of the relevant statement (the require, assignment, return
+  or external call), not the function signature. Cite the signature only when
+  the issue is the declaration itself (visibility, modifiers, missing check).
 - Use "What the PoC does NOT prove" from the results to limit the Impact section.
 - If a relevant claim is not proven, do not delete it: rewrite it as
   "Not tested: ..." and say why it matters. Unproven points that could change

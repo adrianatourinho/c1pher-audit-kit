@@ -14,6 +14,9 @@ go wrong later. Map them all.
 ## Rules
 - Read-only. Never edit files in src/. Write only to notes/.
 - Every claim cites file:line.
+- Cite the line of the relevant statement (the require, assignment, return
+  or external call), not the function signature. Cite the signature only when
+  the issue is the declaration itself (visibility, modifiers, missing check).
 - Do not report vulnerabilities in this phase. Flags are neutral observations
   of surprising code, one line each, phrased as a question, with file:line.
   No attack chains, no impact, no exploit reasoning.
