@@ -1,0 +1,12 @@
+# Audit output never belongs in the kit
+notes/
+findings/
+test/audit/
+
+# Build artifacts
+out/
+cache/
+
+# Secrets
+.env
+.env.*

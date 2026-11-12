@@ -1,0 +1,11 @@
+{
+  "name": "c1pher-audit-kit",
+  "displayName": "C1pher Audit Kit",
+  "version": "0.1.0",
+  "description": "Smart contract audit workflow for Claude Code: recon, threat model, Foundry PoC, skeptical review and report-ready findings.",
+  "author": {
+    "name": "C1pher"
+  },
+  "license": "MIT",
+  "keywords": ["solidity", "smart-contracts", "security", "audit", "foundry", "web3"]
+}

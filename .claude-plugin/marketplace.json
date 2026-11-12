@@ -1,0 +1,14 @@
+{
+  "name": "c1pher",
+  "owner": {
+    "name": "C1pher"
+  },
+  "description": "Security tooling for smart contract auditing with Claude Code.",
+  "plugins": [
+    {
+      "name": "c1pher-audit-kit",
+      "source": "./",
+      "description": "Smart contract audit workflow: recon, threat model, Foundry PoC, skeptical review and findings."
+    }
+  ]
+}
