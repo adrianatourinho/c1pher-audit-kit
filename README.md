@@ -50,6 +50,27 @@ Skills are namespaced: `/c1pher-audit-kit:audit-recon`,
 `/c1pher-audit-kit:threat-model`, and so on. The subagent is
 `@c1pher-audit-kit:devils-advocate`.
 
+**Which scope should I choose?** When installing, Claude Code asks where to
+install the plugin:
+
+| Option | What it does | When to use it |
+|---|---|---|
+| Install for you (user scope) | Available in all your projects | Recommended for most people |
+| Install for all collaborators (project scope) | Writes the install to the repository's settings, for everyone who clones it | Teams sharing one repository. Never use it in repos you don't own, like audit targets |
+| Install for you, in this repo only (local scope) | Only for you, only in this repository | Trying the kit without affecting other projects |
+
+**Update** to the latest version:
+
+```
+claude plugin update c1pher-audit-kit@c1pher
+```
+
+**Uninstall:**
+
+```
+claude plugin uninstall c1pher-audit-kit@c1pher
+```
+
 ## Quick start
 
 Practice on a target with known answers before using the kit on real code.
